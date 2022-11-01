@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat/Montserrat-VariableFont_wght.ttf) format(truetype);
+    font-family: Fraunces;
+    src: url(font/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format(truetype);
+}
+
+
+:root {
+    --color_primary: hsl(158, 36%, 37%);
+    --color_primary2: hsl(30, 38%, 92%);
+    --color_primary3: hsl(157, 44%, 20%);
+    --color_natural: hsl(212, 21%, 14%);
+    --color_natural2: hsl(228, 12%, 48%);
+    --color_natural3: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--color_primary2);
+}
+
+.container {
+    background-color: var(--color_natural3);
+    width: 550px;
+    height: 420px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.left {
+    float: left;
+}
+
+.left .image_web {
+    background-size: cover;
+    width: 275px;
+    height: 420px;
+}
+
+.image_mobile {
+    display: none;
+}
+
+.right {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.right .label {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color_natural2);
+    letter-spacing: 5px;
+}
+
+.right .title {
+    font-family: Fraunces;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 31px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.right .paragraph {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color_natural2);
+    margin-top: 20px;
+    width: 230px;
+    line-height: 21px;
+}
+
+.section_price {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_price .price_fix {
+    font-family: Fraunces;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color_primary);
+}
+
+.section_price .re-price {
+    /* border: 1px solid red; */
+    color: var(--color_natural2);
+    font-size: 14px;
+    margin-right: 70px;
+    margin-top: 10px;
+    text-decoration: line-through;
+}
+
+.button {
+    background-color: var(--color_primary);
+    width: 210px;
+    height: 43px;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-left: 3px;
+    position: relative;
+}
+
+.button:hover {
+    background-color: var(--color_primary3);
+}
+
+.button .button_content {
+    width: 120px;
+    left: 60px;
+    top: 12.5px;
+    position: absolute;
+}
+
+.button .icon {
+    float: left;
+}
+
+.button .text_chart {
+    color: var(--color_natural3);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        width: 345px;
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+
+    .left {
+        float: none;
+    }
+
+    .left .image_web {
+        display: none;
+    }
+
+    .left .image_mobile {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .right {
+        margin: auto;
+    }
+
+    .right .label {
+        font-weight: 600;
+        color: var(--color_natural2);
+        letter-spacing: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .right .title {
+        margin-left: 20px;
+        width: 300px;
+    }
+
+    .right .paragraph {
+        margin-top: 20px;
+        margin-left: 22px;
+        line-height: 21px;
+        width: 295px;
+        justify-content: left;
+    }
+
+    .section_price {
+        margin-left: 22px;
+    }
+
+    .section_price .re-price {
+        margin-right: 140px;
+        margin-top: 12px;
+    }
+
+    .button {
+        margin-left: 22px;
+        width: 300px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .button .button_content {
+        left: 100px;
+        top: 13px;
+    }
+
+
+}
