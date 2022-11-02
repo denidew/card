@@ -34,7 +34,6 @@ body {
     margin-top: 100px;
     border-radius: 10px;
     overflow: hidden;
-
 }
 
 .left {
@@ -97,7 +96,6 @@ body {
 }
 
 .section_price .re-price {
-    /* border: 1px solid red; */
     color: var(--color_natural2);
     font-size: 14px;
     margin-right: 70px;
@@ -138,7 +136,7 @@ body {
     margin-left: 25px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 576px) {
 
     .container {
         width: 345px;
@@ -146,7 +144,6 @@ body {
         margin-top: 25px;
         margin-bottom: 25px;
     }
-
 
     .left {
         float: none;
@@ -208,6 +205,4 @@ body {
         left: 100px;
         top: 13px;
     }
-
-
 }
